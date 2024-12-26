@@ -4,6 +4,9 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 // https://vite.dev/config/
 export default defineConfig({
+  build: {
+    outDir: 'dist', // Ensure this points to the correct output folder
+  },
   plugins: [
     svelte(),
     VitePWA({
